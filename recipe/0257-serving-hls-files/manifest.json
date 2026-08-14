@@ -1,0 +1,71 @@
+{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "{{ id.url }}",
+    "type": "Manifest",
+    "label": { "en": [ "Lunchroom Manners (HLS)" ] },
+    "items": [
+      {
+        "id": "{{ id.path }}/canvas",
+        "type": "Canvas",
+        "height": 360,
+        "width": 480,
+        "duration": 572.034,
+        "items": [
+          {
+            "id": "{{ id.path }}/canvas/page",
+            "type": "AnnotationPage",
+            "items": [
+              {
+                "id": "{{ id.path }}/canvas/page/annotation",
+                "type": "Annotation",
+                "motivation": "painting",
+                "target": "{{ id.path }}/canvas",
+                "body": {
+                  "type": "Choice",
+                  "choiceHint": "user",
+                  "items": [
+                    {
+                      "id": "https://fixtures.iiif.io/video/indiana/lunchroom_manners/master.m3u8",
+                      "type": "Video",
+                      "height": 360,
+                      "width": 480,
+                      "duration": 572.034,
+                      "format": "application/x-mpegURL",
+                      "label": { "none": [ "auto" ] }
+                    },
+                    {
+                      "id": "https://fixtures.iiif.io/video/indiana/lunchroom_manners/high/lunchroom_manners_1200kb.m3u8",
+                      "type": "Video",
+                      "height": 360,
+                      "width": 480,
+                      "duration": 572.034,
+                      "format": "application/x-mpegURL",
+                      "label": { "none": [ "high" ] }
+                    },
+                    {
+                      "id": "https://fixtures.iiif.io/video/indiana/lunchroom_manners/medium/lunchroom_manners_800kb.m3u8",
+                      "type": "Video",
+                      "height": 360,
+                      "width": 480,
+                      "duration": 572.034,
+                      "format": "application/x-mpegURL",
+                      "label": { "none": [ "medium" ] }
+                    },
+                    {
+                      "id": "https://fixtures.iiif.io/video/indiana/lunchroom_manners/low/lunchroom_manners_400kb.m3u8",
+                      "type": "Video",
+                      "height": 360,
+                      "width": 480,
+                      "duration": 572.034,
+                      "format": "application/x-mpegURL",
+                      "label": { "none": [ "low" ] }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
